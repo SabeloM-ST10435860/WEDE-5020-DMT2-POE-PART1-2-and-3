@@ -4,17 +4,28 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
-        <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
         <title>Home || Muianga Maqor</title>
 
         <!--icon and logo section -->
         <link rel="icon" type="image/jpg" href="Img/SUBXERO LOGO.jpg">
-        <div class="logo">
-            <a href="#"><img src="Img/SUBXERO LOGO.jpg" alt="Muianga Maqor Logo" width="100"></a>
-            <h1>Muianga Maqor</h1>
+
+<div class="logo">
+  <div class="cube">
+    <div class="face front"><img src="Img/SUBXERO LOGO.jpg" alt="Muianga Maqor Logo" width="70"></div>
+    <div class="face back"><img src="Img/SUBXERO LOGO.jpg" alt="Muianga Maqor Logo" width="70"></div>
+    <div class="face left"><img src="Img/SUBXERO LOGO.jpg" alt="Muianga Maqor Logo" width="70"></div>
+    <div class="face right"><img src="Img/SUBXERO LOGO.jpg" alt="Muianga Maqor Logo" width="70"></div>
+    <div class="face top"><img src="Img/SUBXERO LOGO.jpg" alt="Muianga Maqor Logo" width="70"></div>
+    <div class="face bottom"><img src="Img/SUBXERO LOGO.jpg" alt="Muianga Maqor Logo" width="70"></div>
+  </div>
+  <h1>Muianga Maqor</h1>
+  <!-- Toggle Menu (Hamburger Icon) -->
+        <div id="menu-toggle">
+            <i class="fas fa-bars"></i>
         </div>
+</div>
     </head>
 
     <body>
@@ -34,74 +45,85 @@
         <!-- Main Content -->
         <main>
             <div class="background-slider"></div>
-        <div>
-            <h2>Innovative Cloud Solutions</h2>
-            <p>Empowering businesses to transform and thrive in the digital era</p>
-        </div>
-            <body>
+            <div>
+                <h2>Innovative Cloud Solutions</h2>
+                <p>Empowering businesses to transform and thrive in the digital era</p>
+            </div>
 
             <h3>Our Clients</h3>
+
             <div class="Clients">
-        <figure class="client1">
-            <img src="Img/network.png" alt="inn-connect logo" height="150" width="150">
-            <figcaption>Inn-Connect Telecoms</figcaption>
-        </figure>
+                <figure data-client="Inn-Connect Telecoms">
+                    <img src="Img/network.png" height="150" width="150">
+                    <figcaption>Inn-Connect Telecoms</figcaption>
+                    <figcaption><u>Click For More info</u></figcaption>
+                </figure>
 
-        <figure class="client2">
-            <img src="Img/kande m.png" alt="kande logo" height="150" width="150">
-            <figcaption>Kande Properties</figcaption>
-        </figure>
+                <figure data-client="Kande Properties">
+                    <img src="Img/kande m.png" height="150" width="150">
+                    <figcaption>Kande Properties</figcaption>
+                    <figcaption><u>Click For More info</u></figcaption>
+                </figure>
 
-        <figure class="client3">
-            <img src="Img/rimberio school.png" alt="east side logo" height="150" width="150">
-            <figcaption>East Side Academy</figcaption>
-        </figure>
+                <figure data-client="East Side Academy">
+                    <img src="Img/rimberio school.png" height="150" width="150">
+                    <figcaption>East Side Academy</figcaption>
+                    <figcaption><u>Click For More info</u></figcaption>
+                </figure>
 
-        <figure class="client4">
-            <img src="Img/Sabelo.png" alt="sabelo logo" height="150" width="150">
-            <figcaption>Sabelo Logistics</figcaption>
-        </figure>
+                <figure data-client="Sabelo Logistics">
+                    <img src="Img/Sabelo.png" height="150" width="150">
+                    <figcaption>Sabelo Logistics</figcaption>
+                    <figcaption><u>Click For More info</u></figcaption>
+                </figure>
 
-        <figure class="client5">
-            <img src="Img/Zero.png" alt="zero logo" height="150" width="150">
-            <figcaption>Zero Bank</figcaption>
-        </figure>
-    </div>
+                <figure data-client="Zero Bank">
+                    <img src="Img/Zero.png" height="150" width="150">
+                    <figcaption>Zero Bank</figcaption>
+                    <figcaption><u>Click For More info</u></figcaption>
+                </figure>
+            </div>
 
-    <!--Client Content-->
-    <div class="Client-content">
-        <p>At Muianga Maqor, we work with a wide range of clients who share one vision — using technology to achieve growth, security, and innovation.
+            <!-- Modal Popup -->
+            <div id="clientModal" class="modal">
+                <div class="modal-content">
+                    <span class="close-btn">&times;</span>
+                    <h2 id="clientName"></h2>
+                    <p id="clientDetails"></p>
+                </div>
+            </div>
 
-    We support SMEs looking for affordable yet powerful IT services, 
-    large enterprises that need advanced multi-cloud and security solutions,
-    and government departments/NGOs that require safe and compliant technology. 
-    We also partner with startups and innovators,
-    helping them scale with flexible cloud platforms, 
-    as well as international businesses expanding into Africa and beyond.
+            <!--Client Content Text-->
+            <div class="Client-content">
+                <p>At Muianga Maqor, we work with a wide range of clients who share one vision — using technology to achieve growth, security, and innovation.
+                <br><br>
+                We support SMEs looking for affordable yet powerful IT services, large enterprises needing advanced multi-cloud and security solutions, government departments requiring safe and compliant technology, and innovative startups looking to scale.
+                <br><br>
+                Our clients trust us because we combine cutting-edge technology with a commitment to long-term partnerships, ensuring solutions that are reliable, secure, and built for the future.</p>
+            </div>
+        </main>
 
-    Our clients trust us because we combine cutting-edge technology with a commitment to long-term partnerships, ensuring solutions that are reliable, secure, and built for the future.</p>
-    </div>
-    </main>
-    <br>
-    <br>
+        <br><br>
 
-     <!-- Footer Section -->
-     <footer>
-        <p>&copy; 2025 Muianga Maqor (Pty) Ltd. All rights reserved.</p>
-        <p>
-            <a href="#">Privacy Policy</a> | 
-            <a href="#">Terms & Conditions</a> |
-            076 476 2085 | muiangasubxero@gmail.com | E73 Spurs Park, Mbuzini 1343
-        </p>
+        <!-- Footer Section -->
+        <footer>
+            <p>&copy; 2025 Muianga Maqor (Pty) Ltd. All rights reserved.</p>
+            <p>
+                <a href="#">Privacy Policy</a> | 
+                <a href="#">Terms & Conditions</a> |
+                076 476 2085 | muiangasubxero@gmail.com | E73 Spurs Park, Mbuzini 1343
+            </p>
 
-      <!--Icons-->  
-     <p>
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-x-twitter"></i></a>
-        <a href="tel:0764762085"><i class="fas fa-phone"></i></a>
-        <a href="mailto:muiangasubxero@gmail.com"><i class="fas fa-envelope"></i></a>
-    </p>
-    </footer>
-</body>
+            <p>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-x-twitter"></i></a>
+                <a href="tel:0764762085"><i class="fas fa-phone"></i></a>
+                <a href="mailto:muiangasubxero@gmail.com"><i class="fas fa-envelope"></i></a>
+            </p>
+        </footer>
+<!-- --- JAVASCRIPT --- -->
+        <script src="script/script.js"></script>
+    </body>
+    
 </html>
