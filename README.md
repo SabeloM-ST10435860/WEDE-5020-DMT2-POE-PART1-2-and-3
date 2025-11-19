@@ -67,6 +67,40 @@ on the needs of the business (Chodorow, 2013).
 For hosting, the website will use AWS- Amazon Web Services as they provide reliable uptime, 
 security, and international scalability (Amazon Web Services, 2022). 
 
+## New Features Added
+# Responsive Toggle Navigation Menu
+Added a hamburger menu for mobile screens.
+Menu slides down when toggled, allowing easy navigation on smaller devices.
+Fully functional on all pages (Home, About, Services, Contact, Blogs).
+
+# Professional Contact Form
+Redesigned form with modern card layout.
+Additional optional phone field.
+Smooth focus and hover animations.
+Fully responsive layout.
+
+# Embedded Google Map
+Displays location directly on the contact page.
+Responsive iframe integrated under the contact form
+
+# Responsive Design
+Website is fully responsive across all devices.
+All pages adjust layout automatically based on screen size.
+Includes responsive form, menu, map, and chatbot elements.
+
+## Technologies Used
+HTML5 & CSS3
+JavaScript (Vanilla JS)
+Font Awesome Icons
+Google Maps Embed
+Responsive design using CSS Flexbox and Media Queries
+
+## Future Improvements
+Introdute an AI chatbot called SubXeroM.
+Add email backend for form submissions.
+Implement animations for sections.
+Add dark/light mode toggle.
+
 ## TIMELINE AND MILESTONES  
 Week 1–2: Planning and Designing phase  
 The phase focuses on gathering all the requirements and identifying the target audience. A demo 
