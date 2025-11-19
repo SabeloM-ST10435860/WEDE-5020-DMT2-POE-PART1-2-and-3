@@ -6,14 +6,19 @@
     <link rel="stylesheet" href="css/style.css">
       <!-- Font Awesome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <title>Contact Us || Muianga Maqor</title>
 
-    <!--icon and logo section-->
+
+    <!--icon -->
     <div class="logo">
-        <a href="#"><img src="Img/SUBXERO LOGO.jpg" alt="Muianga Maqor Logo" width="100"></a>
-        <h1>Muianga Maqor</h1>
-      </div>
+            <a href="#"><img src="Img/SUBXERO LOGO.jpg" alt="Muianga Maqor Logo" width="100"></a>
+             <h1>Muianga Maqor</h1>
+        </div>
+         <!-- Toggle Menu (Hamburger Icon) -->
+        <div id="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
 </head>
 
 <body>
@@ -24,36 +29,64 @@
                 <li><a href="Index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="Services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
                 <li><a href="Blogs.html">Blogs-Case Study</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Main Content -->
-    <main class="form">
-        
-    <!-- Contact form -->
-<form>
-    <label for="name">Your name</label>
-    <input id="name" name="name" type="text" required  placeholder="Sabelo Mahlalela" />
-  <br>
-  <br>
-    <label for="email">Email address</label>
-    <input id="email" name="email" type="email" required placeholder="you@example.com" />
-  <br>
-  <br>
-    <label for="message">Message</label>
-    <textarea id="message" name="message" required placeholder="Write your message here..."></textarea>
-  <br>
-  <br>
-      <button type="submit">Send message</button>
-  </form>
-<br>
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3588.019112987729!2d31.9542983!3d-25.9345972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ee615000758a9ad%3A0x2c9215bc65d4415c!2sSpurs%20Park!5e0!3m2!1sen!2sza!4v1756293120250!5m2!1sen!2sza" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </main>
-    <br>
+<main class="contact-container">
 
+    <div class="contact-card">
+
+        <h2 >Get in Touch</h2>
+        <p class="contact-subtext">Have a question or need assistance? We’re here to help.</p>
+
+        <form class="contact-form">
+            
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input id="name" type="text" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input id="email" type="email" placeholder="example@email.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number (Optional)</label>
+                <input id="phone" type="text" placeholder="+27 76 476 2085">
+            </div>
+
+            <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" placeholder="Write your message here..." required></textarea>
+            </div>
+
+            <button class="submit-btn" type="submit">Send Message</button>
+        </form>
+
+    </div>
+
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3588.019112987729!2d31.9542983!3d-25.9345972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ee615000758a9ad%3A0x2c9215bc65d4415c!2sSpurs%20Park!5e0!3m2!1sen!2sza!4v1756293120250!5m2!1sen!2sza"
+        width="100%" height="100%" style="border:0;" allowfullscreen loading="lazy"></iframe>
+    </div>
+<!-- Success Popup -->
+<div id="success-popup">
+    <div class="popup-box">
+        <i class="fas fa-check-circle"></i>
+        <h3>Message Sent!</h3>
+        <p>Thank you for contacting us. We’ll respond shortly.</p>
+        <button id="close-popup">OK</button>
+    </div>
+</div>
+
+
+</main>
+    <br>
      <!-- Footer Section -->
      <footer>
         <p>&copy; 2025 Muianga Maqor (Pty) Ltd. All rights reserved.</p>
@@ -62,15 +95,15 @@
             <a href="#">Terms & Conditions</a> |
             076 476 2085 | muiangasubxero@gmail.com | E73 Spurs Park, Mbuzini 1343
         </p>
-       
-      <!--Icons-->  
-      <p>
+        <p>
         <a href="#"><i class="fab fa-facebook-f"></i></a>
         <a href="#"><i class="fab fa-instagram"></i></a>
         <a href="#"><i class="fab fa-x-twitter"></i></a>
         <a href="tel:0764762085"><i class="fas fa-phone"></i></a>
         <a href="mailto:muiangasubxero@gmail.com"><i class="fas fa-envelope"></i></a>
-      </p>
+    </p>
     </footer>
+<!--- JAVASCRIPT --- -->
+    <script src="script/script.js"></script>
 </body>
 </html>
