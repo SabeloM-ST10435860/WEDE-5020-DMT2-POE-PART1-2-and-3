@@ -88,7 +88,7 @@ Website is fully responsive across all devices.
 All pages adjust layout automatically based on screen size.
 Includes responsive form, menu, map, and chatbot elements.
 
-## Technologies Used
+# Technologies Used
 HTML5 & CSS3
 JavaScript (Vanilla JS)
 Font Awesome Icons
